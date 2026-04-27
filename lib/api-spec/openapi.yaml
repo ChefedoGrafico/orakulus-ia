@@ -1,0 +1,349 @@
+openapi: 3.1.0
+info:
+  # Do not change the title, if the title changes, the import paths will be broken
+  title: Api
+  version: 0.1.0
+  description: API specification
+servers:
+  - url: /api
+    description: Base API path
+tags:
+  - name: health
+    description: Health operations
+  - name: operation
+    description: Live operation panel and settings
+  - name: admin
+    description: Admin-only operations
+paths:
+  /healthz:
+    get:
+      operationId: healthCheck
+      tags: [health]
+      summary: Health check
+      description: Returns server health status
+      responses:
+        "200":
+          description: Healthy
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HealthStatus"
+  /operation:
+    get:
+      operationId: getOperation
+      tags: [operation]
+      summary: Get current operation state
+      description: Returns the live operation, social proof counters, and WhatsApp link
+      responses:
+        "200":
+          description: Current operation state
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/OperationState"
+  /operation/history:
+    get:
+      operationId: getOperationHistory
+      tags: [operation]
+      summary: Recent finished operations
+      description: Returns the most recent finished operations for display
+      responses:
+        "200":
+          description: Recent finished operations
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/OperationHistoryItem"
+  /operation/stats:
+    get:
+      operationId: getOperationStats
+      tags: [operation]
+      summary: Aggregated stats summary
+      description: Returns aggregated stats for display in the social proof section
+      responses:
+        "200":
+          description: Stats summary
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/StatsSummary"
+  /admin/login:
+    post:
+      operationId: adminLogin
+      tags: [admin]
+      summary: Validate admin password
+      description: Validates the admin password and returns a session token
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/AdminLoginBody"
+      responses:
+        "200":
+          description: Login successful
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/AdminLoginResponse"
+        "401":
+          description: Invalid password
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+  /admin/operation:
+    put:
+      operationId: updateOperation
+      tags: [admin]
+      summary: Update operation state
+      description: Updates the live operation and social proof settings (admin only)
+      parameters:
+        - name: x-admin-token
+          in: header
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/UpdateOperationBody"
+      responses:
+        "200":
+          description: Operation updated
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/OperationState"
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+components:
+  schemas:
+    HealthStatus:
+      type: object
+      properties:
+        status:
+          type: string
+      required:
+        - status
+    OperationDirection:
+      type: string
+      enum: [CALL, PUT]
+    OperationStatus:
+      type: string
+      enum: [aguardando, liberada, finalizada]
+    FlowStrength:
+      type: string
+      enum: [Baixa, Media, Alta]
+    OperationState:
+      type: object
+      properties:
+        asset:
+          type: string
+        direction:
+          $ref: "#/components/schemas/OperationDirection"
+        entryTime:
+          type: string
+          description: Entry time in HH:MM format
+        flowStrength:
+          $ref: "#/components/schemas/FlowStrength"
+        confirmations:
+          type: array
+          items:
+            type: string
+        status:
+          $ref: "#/components/schemas/OperationStatus"
+        estimatedProbability:
+          type: integer
+          minimum: 0
+          maximum: 100
+        result:
+          type: string
+          description: Result of the latest operation (e.g. WIN, LOSS, or empty)
+        peopleWatching:
+          type: integer
+          minimum: 0
+        studentsPresent:
+          type: integer
+          minimum: 0
+        feedbacksReceived:
+          type: integer
+          minimum: 0
+        communityResults:
+          type: integer
+          minimum: 0
+        whatsappLink:
+          type: string
+        notes:
+          type: string
+        updatedAt:
+          type: string
+          format: date-time
+      required:
+        - asset
+        - direction
+        - entryTime
+        - flowStrength
+        - confirmations
+        - status
+        - estimatedProbability
+        - result
+        - peopleWatching
+        - studentsPresent
+        - feedbacksReceived
+        - communityResults
+        - whatsappLink
+        - notes
+        - updatedAt
+    OperationHistoryItem:
+      type: object
+      properties:
+        id:
+          type: integer
+        asset:
+          type: string
+        direction:
+          $ref: "#/components/schemas/OperationDirection"
+        entryTime:
+          type: string
+        result:
+          type: string
+        estimatedProbability:
+          type: integer
+        finishedAt:
+          type: string
+          format: date-time
+      required:
+        - id
+        - asset
+        - direction
+        - entryTime
+        - result
+        - estimatedProbability
+        - finishedAt
+    StatsSummary:
+      type: object
+      properties:
+        peopleWatching:
+          type: integer
+        studentsPresent:
+          type: integer
+        feedbacksReceived:
+          type: integer
+        communityResults:
+          type: integer
+        averageProbability:
+          type: integer
+        totalFinishedOperations:
+          type: integer
+        winsToday:
+          type: integer
+          description: Number of WIN operations completed today (Brasília TZ)
+        lossesToday:
+          type: integer
+          description: Number of LOSS operations completed today (Brasília TZ)
+        totalToday:
+          type: integer
+          description: Total operations completed today (Brasília TZ)
+        winRateToday:
+          type: integer
+          minimum: 0
+          maximum: 100
+          description: Today's assertiveness percentage (0-100)
+      required:
+        - peopleWatching
+        - studentsPresent
+        - feedbacksReceived
+        - communityResults
+        - averageProbability
+        - totalFinishedOperations
+        - winsToday
+        - lossesToday
+        - totalToday
+        - winRateToday
+    AdminLoginBody:
+      type: object
+      properties:
+        password:
+          type: string
+      required:
+        - password
+    AdminLoginResponse:
+      type: object
+      properties:
+        token:
+          type: string
+      required:
+        - token
+    UpdateOperationBody:
+      type: object
+      properties:
+        asset:
+          type: string
+        direction:
+          $ref: "#/components/schemas/OperationDirection"
+        entryTime:
+          type: string
+        flowStrength:
+          $ref: "#/components/schemas/FlowStrength"
+        confirmations:
+          type: array
+          items:
+            type: string
+        status:
+          $ref: "#/components/schemas/OperationStatus"
+        estimatedProbability:
+          type: integer
+          minimum: 0
+          maximum: 100
+        result:
+          type: string
+        peopleWatching:
+          type: integer
+          minimum: 0
+        studentsPresent:
+          type: integer
+          minimum: 0
+        feedbacksReceived:
+          type: integer
+          minimum: 0
+        communityResults:
+          type: integer
+          minimum: 0
+        whatsappLink:
+          type: string
+        notes:
+          type: string
+        archiveCurrent:
+          type: boolean
+          description: If true, archives the current operation to history before applying changes
+      required:
+        - asset
+        - direction
+        - entryTime
+        - flowStrength
+        - confirmations
+        - status
+        - estimatedProbability
+        - result
+        - peopleWatching
+        - studentsPresent
+        - feedbacksReceived
+        - communityResults
+        - whatsappLink
+        - notes
+    ErrorResponse:
+      type: object
+      properties:
+        error:
+          type: string
+      required:
+        - error
