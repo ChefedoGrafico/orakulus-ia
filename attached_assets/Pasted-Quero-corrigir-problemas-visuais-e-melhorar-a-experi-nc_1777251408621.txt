@@ -1,0 +1,155 @@
+Quero corrigir problemas visuais e melhorar a experiência da área PREMIUM da ORAKULUS IA.
+
+IMPORTANTE:
+Não alterar backend.
+Não alterar lógica principal.
+Focar em:
+- correção visual
+- coerência
+- experiência premium futurista
+
+---
+
+1. CORRIGIR CÍRCULOS (GRAVE)
+
+Problema:
+Os arcos/círculos decorativos estão vazando para fora dos cards.
+
+Correção:
+
+- Garantir que TODOS os elementos circulares respeitem o container do card
+- Aplicar:
+  overflow: hidden nos cards
+
+- Ajustar posição dos elementos:
+  position: absolute corretamente dentro do card
+
+- Reduzir tamanho dos círculos para não ultrapassar bordas
+
+Resultado esperado:
+Nenhum elemento visual pode sair do quadrante do card
+
+---
+
+2. SIMPLIFICAR TEXTO DAS % (CONFIANÇA E ASSERTIVIDADE)
+
+Problema:
+Texto abaixo da % está poluído e amador
+
+Correção:
+
+- Remover completamente:
+  "ORAKULUS IA - ANÁLISE PREMIUM"
+  "NÍVEL DE CONFIANÇA DA LEITURA ATUAL"
+  textos redundantes
+
+- Deixar apenas:
+
+GRANDE:
+"75%" (ou valor dinâmico)
+
+PEQUENO abaixo:
+"Confiança"
+
+ou
+
+"Assertividade"
+
+---
+
+3. DAR MAIS DESTAQUE PARA A %
+
+- Aumentar tamanho da % (mais dominante no card)
+- Aplicar glow leve
+- Centralizar perfeitamente
+
+---
+
+4. CORRIGIR RESULTADO LOSS (TRANSPARÊNCIA)
+
+Problema:
+Sistema está mascarando loss como win em G1
+
+Correção obrigatória:
+
+- Se operação for LOSS:
+mostrar exatamente:
+
+"LOSS"
+
+- NÃO transformar em win
+- NÃO mascarar resultado
+- NÃO usar "G1 WIN" automático
+
+Adicionar:
+
+Win → verde
+Loss → vermelho
+
+Resultado deve ser transparente e real
+
+---
+
+5. MELHORAR DESIGN DO GRÁFICO (FUTURISTA)
+
+Melhorias:
+
+- Adicionar glow nas velas (leve)
+- Criar linha de preço atual com efeito pulsante
+- Adicionar leve efeito scanner horizontal (movimento suave)
+- Destacar zonas:
+
+"ZONA DE COMPRA"
+"ZONA DE VENDA"
+
+com fundo suave (transparente)
+
+- Adicionar efeito de radar no ponto atual do preço
+
+- Melhorar grid:
+linhas mais suaves e mais profissionais
+
+---
+
+6. CABEÇALHO DO GRÁFICO
+
+Substituir por:
+
+"ORAKULUS IA // PROCESSAMENTO DE FLUXO EM TEMPO REAL"
+
+---
+
+7. BOTÃO DO SINAL
+
+- Se COMPRA:
+glow verde forte + leve pulsação
+
+- Se VENDA:
+glow vermelho
+
+---
+
+8. ALINHAMENTO GERAL
+
+- Garantir que TODOS os cards estejam alinhados
+- Mesmo padding
+- Mesmo espaçamento
+- Nada fora de eixo
+
+---
+
+9. EXPERIÊNCIA FINAL
+
+O sistema deve parecer:
+
+- profissional
+- limpo
+- coerente
+- tecnológico
+- sem exagero visual
+
+---
+
+Não adicionar textos de venda.
+Não poluir a interface.
+Manter estilo de sistema real.

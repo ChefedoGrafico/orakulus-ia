@@ -1,0 +1,140 @@
+Quero ajustar o pop-up progressivo da página FREE da ORAKULUS IA.
+
+IMPORTANTE:
+Não alterar Premium.
+Não alterar admin.
+Não quebrar login.
+Focar apenas no fluxo FREE e no modal de cadastro.
+
+1. ETAPA 1 — ACESSO
+
+Na primeira etapa do pop-up, NÃO falar sobre corretora e NÃO mencionar quantidade de sinais.
+
+Substituir o subtítulo atual por:
+
+“Crie seu cadastro gratuito na ORAKULUS IA para continuar acompanhando as leituras.”
+
+Manter campos:
+- nome completo
+- e-mail
+- senha
+- confirmar senha
+
+Botão:
+“PRÓXIMO”
+
+2. ETAPA 2 — CORRETORA
+
+Somente na segunda etapa falar sobre corretora.
+
+Texto:
+
+“Para continuar recebendo sinais, crie sua conta pela corretora oficial e informe seu ID.”
+
+Adicionar aviso:
+
+“⚠️ Contas criadas fora do link oficial não serão validadas.”
+
+Botão:
+“CRIAR CONTA OFICIAL”
+
+Link:
+https://trade.avalonbroker.com/register?aff=783535&aff_model=revenue&afftrack=
+
+Abaixo, adicionar acordeão:
+
+Título:
+“Já tenho conta na corretora”
+
+Ao abrir, mostrar:
+
+“A corretora permite até 2 contas por CPF, desde que utilize outro e-mail e número no novo cadastro.
+
+Não é necessário excluir sua conta antiga.”
+
+Manter campos:
+- ID da conta na corretora
+- status do depósito
+
+Status do depósito:
+- Ainda não depositei
+- Depósito realizado
+
+Se escolher “Ainda não depositei”, mostrar:
+
+“Para liberar o acesso, é necessário realizar o primeiro depósito.”
+
+3. NÃO INFORMAR QUANTIDADE DE SINAIS NO CADASTRO
+
+Não falar:
+- “mais 10 sinais”
+- “10 sinais extras”
+- “quantidade de sinais liberados”
+
+Essa informação deve ficar oculta para o lead.
+
+4. BLOQUEIO PERSISTENTE APÓS 5 SINAIS
+
+Se o usuário consumiu os 5 sinais gratuitos iniciais:
+
+- salvar esse estado no backend quando estiver logado
+- salvar também em localStorage/cookie como fallback para visitantes
+- ao sair da página e voltar, NÃO liberar novos sinais
+- mostrar novamente o pop-up de cadastro
+
+Regra:
+bateu 5 sinais → só continua após criar cadastro ORAKULUS IA + conta na corretora + validação.
+
+5. BLOQUEIO PERSISTENTE APÓS LIMITE EXTRA
+
+Após o usuário aprovado consumir os sinais extras liberados:
+
+- salvar esse estado no backend
+- ao sair e voltar, NÃO liberar novos sinais gratuitos
+- mostrar modal final Premium
+
+Modal final:
+
+Título:
+“Seu acesso gratuito chegou ao limite”
+
+Texto:
+“Para continuar recebendo sinais ilimitados, ative a ORAKULUS IA PREMIUM.”
+
+Botão:
+“🚀 ATIVAR PREMIUM AGORA”
+
+Esse botão deve levar ao checkout Cakto já configurado.
+
+6. REGRAS FINAIS
+
+- Visitante/usuário novo: até 5 sinais
+- Ao consumir 5: modal de cadastro obrigatório
+- Pendente: tela de validação
+- Aprovado: libera acesso gratuito estendido, sem informar quantidade ao lead
+- Ao consumir o limite estendido: bloqueio Premium obrigatório
+- Premium: ilimitado
+
+7. NÃO PERMITIR RESET SIMPLES
+
+- refresh não pode resetar contador
+- sair e voltar não pode resetar contador
+- localStorage deve impedir nova liberação para visitante que já consumiu 5
+- backend deve controlar usuários logados
+
+8. UX
+
+- Modal bonito, escuro, premium
+- Sem textos longos
+- Sem parecer burocrático
+- Sem mencionar “10 sinais” para o lead
+
+Depois me diga:
+- quais arquivos foram alterados
+- onde o estado de limite foi salvo
+- como testar:
+  a) visitante consumiu 5 e voltou
+  b) usuário pendente
+  c) usuário aprovado
+  d) usuário consumiu limite estendido
+  e) usuário premium

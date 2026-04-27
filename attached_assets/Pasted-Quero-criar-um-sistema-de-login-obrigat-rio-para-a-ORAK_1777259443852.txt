@@ -1,0 +1,94 @@
+Quero criar um sistema de login obrigatório para a ORAKULUS IA.
+
+IMPORTANTE:
+Não recriar o projeto.
+Não quebrar o admin.
+Não quebrar o checkout.
+Não alterar o design geral.
+Apenas adicionar login de usuário e corrigir o fluxo FREE/PREMIUM.
+
+OBJETIVO:
+O usuário deve acessar com e-mail e senha para o sistema identificar corretamente:
+- se ele é FREE
+- se está em análise
+- se foi aprovado
+- se é PREMIUM
+- se o Premium venceu
+
+1. Criar rota:
+/login
+
+2. Criar tela de login com:
+- e-mail
+- senha
+- botão “Entrar na ORAKULUS IA”
+- link “Criar acesso”
+
+3. Criar rota:
+/cadastro
+
+Campos:
+- nome completo
+- e-mail
+- senha
+- confirmar senha
+- ID da corretora
+- status do depósito
+- comprovante/link opcional
+
+4. No cadastro:
+- salvar usuário no banco
+- plano padrão = FREE
+- status_validacao = PENDENTE
+- senha criptografada
+- data_cadastro automática
+
+5. No login:
+- validar e-mail e senha
+- buscar usuário no banco
+- salvar sessão do usuário
+- carregar sempre do backend:
+  plano
+  status_validacao
+  data_expiracao
+
+6. Na home:
+Se usuário NÃO estiver logado:
+- mostrar botão “Entrar”
+- limitar experiência
+- ao tentar liberar mais sinais, enviar para /login
+
+7. Se usuário estiver logado e status_validacao = PENDENTE:
+- mostrar tela “Seu acesso está em análise”
+
+8. Se usuário estiver logado e status_validacao = APROVADO e plano = FREE:
+- liberar apenas sinais gratuitos limitados
+- manter CTA Premium
+
+9. Se usuário estiver logado e plano = PREMIUM:
+- NÃO mostrar botão de pagamento
+- NÃO mostrar “Desbloquear leitura completa”
+- mostrar:
+“👑 PREMIUM ATIVO”
+- liberar a experiência Premium
+
+10. Se plano = PREMIUM, mas data_expiracao venceu:
+- voltar para FREE
+- mostrar botão de renovação
+
+11. Corrigir problema atual:
+Quando usuário aprovado como PREMIUM no admin, a página FREE não pode continuar pedindo pagamento.
+Ela deve reconhecer o plano pelo login e mostrar Premium ativo.
+
+12. Criar botão “Sair”:
+- limpar sessão
+- voltar para /login
+
+13. Manter /admin funcionando como está.
+
+14. Depois me diga:
+- quais arquivos foram criados
+- quais arquivos foram alterados
+- como testar login
+- como testar usuário FREE
+- como testar usuário PREMIUM

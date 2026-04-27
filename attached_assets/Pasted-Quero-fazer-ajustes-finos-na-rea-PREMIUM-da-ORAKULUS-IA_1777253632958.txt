@@ -1,0 +1,153 @@
+Quero fazer ajustes finos na área PREMIUM da ORAKULUS IA para deixar o visual totalmente profissional e consistente.
+
+IMPORTANTE:
+Não alterar backend.
+Não alterar lógica.
+Apenas refinar visual e coerência.
+
+---
+
+1. TOPO (NOME)
+
+Garantir que apareça APENAS:
+
+"ORAKULUS IA"
+
+Remover qualquer variação:
+- ORAKULUS IA duplicado
+- textos repetidos no header
+
+Deixar mais limpo e minimalista
+
+---
+
+2. CARD "CONFIANÇA IA"
+
+Problemas:
+- ainda poluído
+- pequeno desalinhamento visual
+
+Ajustes:
+
+- manter apenas:
+  "79%" grande
+  "Confiança" pequeno abaixo
+
+- remover qualquer texto extra desnecessário
+
+- centralizar perfeitamente o conteúdo
+
+- suavizar o círculo:
+  menos linhas, mais limpo
+  animação mais lenta
+
+---
+
+3. CARD "ASSERTIVIDADE"
+
+Problema:
+- ainda parece “apertado”
+- espaçamento não está confortável
+
+Ajustes:
+
+- aumentar padding interno
+- centralizar melhor o círculo
+- dar mais espaço entre % e os dados abaixo
+
+- manter apenas:
+  "95%" grande
+  "Assertividade" pequeno
+
+---
+
+4. BLOCO DE RESULTADOS (WIN / LOSS)
+
+Ajustes importantes:
+
+- deixar mais limpo:
+  menos borda, mais espaço
+
+- cores:
+  WIN → verde
+  LOSS → vermelho (mais destacado)
+  TOTAL → neutro
+
+- aumentar contraste do LOSS (tem que chamar atenção)
+
+---
+
+5. COERÊNCIA DO SINAL (CRÍTICO)
+
+Hoje está correto, mas reforçar regra:
+
+Se:
+PRESSÃO VENDEDORA
+
+Então:
+- barra de vendedores dominante
+- cor vermelha mais forte
+- label "DOMÍNIO VENDEDOR" destacado
+
+Garantir que nunca haja conflito visual
+
+---
+
+6. GRÁFICO (UPGRADE FINAL)
+
+Ajustes:
+
+- adicionar leve glow nas velas
+- destacar vela atual (mais brilho)
+- linha de preço atual com efeito pulsante
+
+- suavizar grid (menos forte)
+
+- melhorar zona:
+"ZONA DE COMPRA" e "ZONA DE VENDA"
+mais discretas e elegantes
+
+---
+
+7. BOTÃO DO SINAL
+
+- "PRESSÃO VENDEDORA" → glow vermelho mais suave
+- evitar parecer exagerado
+
+---
+
+8. GATILHOS ATIVOS
+
+Ajuste:
+
+- melhorar legibilidade
+- aumentar espaçamento entre linhas
+- usar ícones mais discretos
+
+---
+
+9. REMOVER EXCESSOS
+
+Revisar tudo e:
+
+- remover qualquer texto redundante
+- remover qualquer elemento que polua visual
+
+---
+
+10. SENSAÇÃO FINAL
+
+O sistema deve parecer:
+
+- limpo
+- confiável
+- técnico
+- profissional
+
+Evitar exageros neon.
+Mais "institucional moderno".
+
+---
+
+Não adicionar novas funções.
+Apenas refinar e polir.

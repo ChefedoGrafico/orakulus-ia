@@ -1,0 +1,150 @@
+Quero transformar a tela de liberação de acesso gratuito em uma etapa mais fluida, direta e com maior conversão.
+
+IMPORTANTE:
+Não alterar backend.
+Não quebrar validações.
+Não mudar estrutura principal.
+Focar em UX + copy + conversão.
+
+---
+
+1. TÍTULO PRINCIPAL
+
+Substituir:
+
+“Libere seu acesso gratuito”
+
+Por:
+
+“Você está a um passo de liberar seu acesso”
+
+---
+
+2. SUBTÍTULO (MAIS DIRETO)
+
+Substituir por:
+
+“Crie sua conta pela corretora oficial e informe seus dados para ativar o sistema.”
+
+---
+
+3. BLOCO AMARELO (MAIS FORTE)
+
+Substituir conteúdo por:
+
+“⚠️ Acesso liberado apenas para contas criadas pelo link oficial
+
+Crie sua conta abaixo e volte para ativar seu acesso.”
+
+---
+
+4. BOTÃO DA CORRETORA
+
+Manter:
+
+“CRIAR CONTA OFICIAL”
+
+Adicionar abaixo do botão (microcopy):
+
+“Leva menos de 2 minutos”
+
+---
+
+5. OBJEÇÃO (JÁ TEM CONTA)
+
+Manter como acordeão, mas melhorar texto interno:
+
+“Você pode criar uma nova conta normalmente.
+
+A corretora permite até 2 contas por CPF,
+desde que utilize outro e-mail e número.
+
+Não é necessário excluir a conta antiga.”
+
+---
+
+6. FORMULÁRIO (FLUIDEZ)
+
+Melhorar placeholders:
+
+Nome:
+“Digite seu nome”
+
+E-mail:
+“Digite o mesmo e-mail usado na corretora”
+
+ID:
+“Digite o ID da sua conta na corretora”
+
+Comprovante:
+“Cole o link ou envie o comprovante (opcional)”
+
+---
+
+7. CTA PRINCIPAL (MUITO IMPORTANTE)
+
+Substituir botão:
+
+“🔐 SOLICITAR ACESSO GRATUITO”
+
+Por:
+
+“🚀 LIBERAR MEU ACESSO AGORA”
+
+---
+
+8. MICROCOPY ABAIXO DO CTA
+
+Adicionar:
+
+“Seu acesso é analisado em poucos minutos”
+
+---
+
+9. PROGRESSO VISUAL (FORTE)
+
+Adicionar acima do formulário:
+
+Passo 1: Criar conta  
+Passo 2: Informar dados  
+Passo 3: Acesso liberado  
+
+(visual simples tipo stepper)
+
+---
+
+10. SENSOR DE REALIDADE (PSICOLÓGICO)
+
+Adicionar pequeno texto discreto:
+
+“+ dezenas de usuários liberando acesso agora”
+
+(número pode variar automaticamente)
+
+---
+
+11. UX IMPORTANTE
+
+- Scroll suave ao clicar no botão da corretora
+- Feedback visual ao enviar formulário:
+“Validando acesso…”
+
+- Após envio:
+“Acesso enviado para análise”
+
+---
+
+12. SENSAÇÃO FINAL
+
+Essa tela deve parecer:
+
+- simples
+- rápida
+- confiável
+- sem burocracia
+
+---
+
+Não poluir visual.
+Não exagerar em textos.
+Focar em conversão.

@@ -1,0 +1,64 @@
+Quero que você faça apenas ajustes de conversão na primeira página atual da ORAKULUS IA.
+
+IMPORTANTE:
+Não recrie o projeto do zero.
+Não altere a estrutura geral.
+Não mexa na página Premium ainda.
+Não crie novas páginas agora.
+Mantenha o visual atual, apenas melhore textos, CTAs e pequenos elementos estratégicos.
+
+Faça as seguintes alterações:
+
+1. Trocar a headline principal atual por:
+“Você não perde por falta de estratégia…
+você perde por entrar atrasado no fluxo.”
+
+2. Logo abaixo da headline, adicionar um subtítulo:
+“A ORAKULUS IA analisa cenário, força e intenção do preço em tempo real para identificar possíveis oportunidades antes da maioria agir.”
+
+3. Adicionar abaixo do subtítulo dois pequenos indicadores de movimento:
+“⏳ Novas leituras sendo analisadas em tempo real”
+“👁 +47 pessoas acompanhando o mercado agora”
+
+4. No card principal da operação, adicionar uma linha discreta:
+“👁 23 pessoas estão acompanhando essa leitura agora”
+
+5. Melhorar os cards bloqueados, usando textos mais fortes:
+- “⚠️ Você acabou de perder uma entrada de alta probabilidade”
+- “Leitura premium bloqueada”
+- “Direção, horário e força do fluxo disponíveis apenas no Premium”
+- “Desbloqueie para acessar a leitura completa”
+
+6. Trocar qualquer botão principal de upgrade para:
+“🔓 DESBLOQUEAR LEITURA COMPLETA”
+
+7. Na seção Premium, trocar o título atual por:
+“⚠️ Você já viu o suficiente…
+Agora veja o que realmente está por trás do mercado.”
+
+8. Na seção Premium, reforçar o texto:
+“Na versão gratuita, você acessa apenas uma parte da leitura. No Premium, você libera sinais ilimitados, operações desbloqueadas, histórico avançado e leitura completa do fluxo.”
+
+9. Na área de números/prova social, deixar os textos mais claros:
+- “Usuários ativos agora”
+- “Operações analisadas hoje”
+- “Leituras realizadas”
+- “Sinais monitorados”
+
+10. Acima do formulário de cadastro, adicionar:
+“🚀 Comece com acesso gratuito e limitado”
+
+11. Manter termos seguros:
+Não usar promessa de lucro garantido.
+Não usar “ganho garantido”.
+Usar:
+- possível oportunidade
+- probabilidade estimada
+- leitura de fluxo
+- cenário identificado
+- sinal operacional
+
+12. Manter o design atual:
+fundo escuro, neon, amarelo, verde, azul ciano, cards futuristas e responsivo para celular.
+
+Depois de concluir, me diga quais arquivos foram alterados.

@@ -1,0 +1,72 @@
+Crie uma landing page/app web profissional para captar leads para uma comunidade de operações ao vivo no mercado de opções binárias.
+
+Objetivo:
+Vender a ideia de uma operação baseada em leitura de “fluxo de vela”, com foco em organização, análise de cenário e acompanhamento ao vivo.
+
+A página precisa ter:
+
+1. Headline forte:
+“Entre para a operação que analisa o fluxo de vela antes da maioria enxergar o movimento.”
+
+2. Subheadline:
+“Receba análises, possíveis entradas e acompanhamento ao vivo com base em leitura de cenário, estrutura do mercado e fluxo de velas.”
+
+3. Seção principal com:
+- Card mostrando “Probabilidade estimada da operação”
+- Exemplo: “Taxa estimada: 82%”
+- Deixar claro que é uma estimativa baseada em critérios técnicos, não promessa de lucro.
+
+4. Painel de operação ao vivo:
+Mostrar informações como:
+- Ativo analisado
+- Direção: CALL ou PUT
+- Horário da entrada
+- Força do fluxo: Baixa / Média / Alta
+- Confirmações encontradas
+- Status: aguardando confirmação / entrada liberada / operação finalizada
+
+5. Seção de prova social:
+Criar cards com dados reais ou editáveis, como:
+- “Pessoas acompanhando agora”
+- “Alunos que marcaram presença”
+- “Feedbacks recebidos”
+- “Resultados enviados pela comunidade”
+
+Importante:
+Não inventar lucros falsos nem números irreais. Os números devem ser campos editáveis pelo administrador.
+
+6. Seção explicando o método:
+Título:
+“Como funciona a leitura de fluxo de vela?”
+
+Texto:
+“O foco não é adivinhar o mercado. A análise busca identificar força, repetição, rejeição, retração e intenção do preço antes da entrada.”
+
+7. Chamada para ação:
+Botão grande:
+“Quero entrar na operação”
+
+Ao clicar, enviar para WhatsApp com mensagem pronta:
+“Quero participar da operação de fluxo de vela.”
+
+8. Design:
+- Fundo escuro, preto e azul escuro
+- Destaques em verde neon e amarelo
+- Visual de mercado financeiro
+- Cards modernos
+- Layout responsivo para celular
+- Aparência profissional, agressiva e confiável
+
+9. Área admin simples:
+Criar uma parte onde eu consiga editar:
+- Ativo da operação
+- Direção
+- Porcentagem estimada
+- Número de pessoas acompanhando
+- Resultado da operação
+- Link do WhatsApp
+
+10. Aviso obrigatório no rodapé:
+“Mercado de renda variável envolve riscos. Resultados passados não garantem resultados futuros. As informações apresentadas são educacionais e não representam promessa de lucro.”
+
+Crie tudo em React, com visual moderno, responsivo e pronto para publicar.

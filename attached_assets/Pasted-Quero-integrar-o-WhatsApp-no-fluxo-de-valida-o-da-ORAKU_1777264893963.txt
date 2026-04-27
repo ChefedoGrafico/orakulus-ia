@@ -1,0 +1,82 @@
+Quero integrar o WhatsApp no fluxo de validação da ORAKULUS IA.
+
+IMPORTANTE:
+Não alterar Premium.
+Não alterar admin.
+Não quebrar login.
+Não alterar checkout.
+Apenas ajustar o fluxo após o usuário enviar os dados da corretora.
+
+Objetivo:
+Depois que o usuário preencher o ID da corretora e informar que o depósito foi realizado, ele deve ser direcionado para o WhatsApp do suporte com uma mensagem pronta para acelerar a validação.
+
+Link base do WhatsApp:
+https://wa.me/5511932353426
+
+Mensagem padrão:
+Acabei de criar minha conta pela ORAKULUS IA.
+
+ID da corretora: [ID_DIGITADO_PELO_USUARIO]
+Depósito: já realizado
+
+Aguardo validação para liberação dos sinais.
+
+1. Após o usuário preencher:
+- ID da corretora
+- status do depósito = “Depósito realizado”
+
+E clicar em enviar para validação:
+
+- salvar os dados no banco
+- status_validacao = PENDENTE
+- abrir o WhatsApp com a mensagem preenchida automaticamente usando o ID digitado
+
+2. O link final deve ser gerado dinamicamente, usando encodeURIComponent.
+
+Exemplo:
+https://wa.me/5511932353426?text=MENSAGEM_FORMATADA
+
+3. Se o usuário escolher:
+“Ainda não depositei”
+
+Não abrir WhatsApp.
+
+Mostrar aviso:
+“Para liberar os sinais extras, é necessário realizar o primeiro depósito.”
+
+4. Antes de abrir o WhatsApp, mostrar uma tela/modal de confirmação:
+
+Título:
+“Cadastro enviado para validação”
+
+Texto:
+“Agora fale com o suporte para agilizar sua liberação.”
+
+Botão:
+“💬 FALAR COM SUPORTE AGORA”
+
+Esse botão deve abrir o WhatsApp com a mensagem pronta.
+
+5. A mensagem enviada ao WhatsApp deve ficar assim:
+
+Acabei de criar minha conta pela ORAKULUS IA.
+
+ID da corretora: ID_DO_USUARIO
+Depósito: já realizado
+
+Aguardo validação para liberação dos sinais.
+
+6. Manter a tela de status PENDENTE:
+
+“Seu acesso está sendo validado”
+“Estamos conferindo seu ID e primeiro depósito no painel da corretora.”
+
+7. Não usar link encurtado.
+8. Não pedir URL de comprovante.
+9. Não abrir WhatsApp se o ID estiver vazio.
+10. Não liberar sinais automaticamente. A liberação continua manual pelo admin.
+
+Depois me diga:
+- quais arquivos foram alterados
+- onde o WhatsApp foi integrado
+- como testar o fluxo completo

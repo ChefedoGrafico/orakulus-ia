@@ -1,0 +1,156 @@
+Quero ajustar e elevar o nível da área PREMIUM da ORAKULUS IA.
+
+IMPORTANTE:
+Não alterar backend.
+Não quebrar funcionalidades.
+Focar em:
+- correção de inconsistências
+- coerência de dados
+- experiência visual futurista
+
+---
+
+1. CORREÇÃO DE TEXTO (URGENTE)
+
+- Corrigir nome no topo para:
+"ORAKULUS IA"
+
+(Nunca mais permitir variação errada)
+
+---
+
+2. BLOCO "CONFIANÇA DA IA"
+
+- Remover completamente o texto "HUSA"
+
+Substituir por algo profissional:
+
+Opção 1:
+"Baseado em dados em tempo real"
+
+Opção 2:
+"Análise baseada em fluxo e liquidez"
+
+Adicionar subtítulo:
+
+"Nível de confiança da leitura atual"
+
+---
+
+3. BLOCO ASSERTIVIDADE (AJUSTE DE LAYOUT)
+
+- Centralizar corretamente o círculo
+- Garantir padding interno equilibrado
+- Ajustar espaçamento para não cortar bordas
+
+Adicionar subtítulo:
+
+"Desempenho recente do sistema"
+
+---
+
+4. COERÊNCIA DO SISTEMA (MUITO IMPORTANTE)
+
+Hoje existe inconsistência:
+
+Se entrada = COMPRA
+→ pressão NÃO pode ser vendedora
+
+Corrigir lógica visual:
+
+- Se sinal for COMPRA:
+    compradores > vendedores
+    barra verde dominante
+
+- Se sinal for VENDA:
+    vendedores > compradores
+    barra vermelha dominante
+
+Garantir que:
+
+"FORÇA COMPRADORA"
+"PRESSÃO DO MERCADO"
+"SINAL"
+
+sempre estejam alinhados
+
+---
+
+5. BLOCO PRESSÃO DE MERCADO
+
+Melhorar leitura:
+
+Adicionar label dinâmico:
+
+"DOMÍNIO COMPRADOR"
+ou
+"DOMÍNIO VENDEDOR"
+
+Adicionar animação leve nas barras
+
+---
+
+6. UPGRADE DO GRÁFICO (PONTO PRINCIPAL)
+
+Quero deixar o gráfico mais futurista.
+
+Adicionar:
+
+- efeito de varredura (scanner passando da esquerda para direita)
+- glow nas velas ativas
+- linha horizontal pulsando (preço atual)
+- marcação de zonas:
+
+"ZONA DE COMPRA FORTE"
+"ZONA DE VENDA"
+
+- efeito de radar circular no ponto atual do preço
+
+- leve brilho no eixo central
+
+---
+
+7. HEADER DO GRÁFICO
+
+Substituir por algo mais técnico:
+
+"ORAKULUS IA // PROCESSAMENTO DE FLUXO EM TEMPO REAL"
+
+---
+
+8. BOTÃO DO SINAL
+
+Melhorar:
+
+Se COMPRA:
+- glow verde mais forte
+- animação leve pulsando
+
+Se VENDA:
+- glow vermelho
+
+---
+
+9. MICRO EXPERIÊNCIA
+
+Adicionar pequenos detalhes:
+
+- números com animação (count up)
+- indicadores piscando suavemente
+- badge "AO VIVO" pulsando
+
+---
+
+10. SENSAÇÃO FINAL
+
+O usuário deve sentir:
+
+"isso é uma ferramenta profissional, não um site comum"
+
+---
+
+Não alterar o FREE.
+Não alterar lógica principal.
+
+Focar em deixar o PREMIUM:
+mais coerente, mais limpo e mais futurista.

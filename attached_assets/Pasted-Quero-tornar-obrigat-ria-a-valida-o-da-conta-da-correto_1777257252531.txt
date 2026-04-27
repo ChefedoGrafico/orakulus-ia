@@ -1,0 +1,75 @@
+Quero tornar obrigatória a validação da conta da corretora antes de liberar acesso à ORAKULUS IA.
+
+IMPORTANTE:
+Não recriar o projeto.
+Não alterar o visual geral.
+Apenas ajustar fluxo de cadastro, banco e admin.
+
+Objetivo:
+O usuário só poderá receber acesso gratuito ou premium após comprovar que criou conta pelo link oficial da corretora.
+
+1. No formulário de cadastro, adicionar um bloco antes dos campos:
+
+“Para liberar seu acesso, crie sua conta exclusivamente pelo link oficial abaixo.
+
+⚠️ Contas criadas fora do link oficial não serão validadas.”
+
+2. Adicionar botão:
+“CRIAR CONTA OFICIAL”
+
+Esse botão deve abrir o link oficial:
+COLOCAR_LINK_DA_CORRETORA_AQUI
+
+3. No formulário, manter/adicionar campos:
+- nome
+- e-mail
+- ID da corretora
+- status do depósito
+- campo para link ou upload do comprovante
+- campo para observação opcional
+
+4. No banco de dados, adicionar campos:
+- id_corretora
+- status_validacao com valores:
+  PENDENTE
+  APROVADO
+  RECUSADO
+- comprovante_deposito
+- observacao_admin
+
+5. Quando o usuário preencher o formulário:
+- salvar como plano FREE
+- status_validacao = PENDENTE
+- NÃO liberar mais sinais automaticamente
+
+6. Na página principal, se status_validacao = PENDENTE:
+mostrar:
+“Seu acesso está em análise. Assim que seu cadastro for validado, os sinais gratuitos serão liberados.”
+
+7. No admin, exibir:
+- nome
+- e-mail
+- ID da corretora
+- status do depósito
+- comprovante
+- status da validação
+
+8. No admin, criar botões:
+- Aprovar acesso
+- Recusar acesso
+
+9. Só após clicar em “Aprovar acesso”, o usuário passa a ter acesso FREE validado.
+
+10. Se recusado, mostrar na IA:
+“Cadastro não validado. Verifique se sua conta foi criada pelo link oficial.”
+
+11. Não liberar Premium para usuários com status_validacao diferente de APROVADO.
+
+12. Manter a lógica:
+FREE = limitado
+PREMIUM = completo
+
+Depois me diga:
+- quais arquivos foram alterados
+- quais campos foram adicionados
+- como aprovar ou recusar um usuário no admin

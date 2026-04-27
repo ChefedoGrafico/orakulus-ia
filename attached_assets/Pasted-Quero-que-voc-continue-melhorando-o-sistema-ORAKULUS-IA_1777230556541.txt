@@ -1,0 +1,125 @@
+Quero que você continue melhorando o sistema ORAKULUS IA que já foi criado.
+
+IMPORTANTE:
+Não recrie o projeto do zero.
+Não apague a estrutura atual.
+Não substitua totalmente o design existente.
+Apenas complemente, refine e melhore o que já está pronto.
+
+Objetivo:
+Melhorar a experiência da versão gratuita e criar uma estratégia mais forte de conversão para a ORAKULUS IA PREMIUM.
+
+Faça as seguintes melhorias:
+
+1. Modo FREE limitado
+Melhore a área da versão gratuita para deixar claro que o usuário tem acesso limitado.
+
+Adicionar:
+- contador de sinais disponíveis no dia
+- exemplo: “Sinais restantes hoje: 3/3”
+- mensagem: “Você está usando a versão gratuita da ORAKULUS IA”
+- aviso discreto: “Algumas leituras avançadas estão disponíveis apenas no Premium”
+
+2. Operações bloqueadas
+Adicionar cards de operações bloqueadas com visual premium e cadeado.
+
+Textos para usar:
+- “Fluxo premium detectado”
+- “Entrada de alta probabilidade restrita”
+- “Leitura completa disponível no Premium”
+- “Desbloqueie para visualizar direção, horário e força do fluxo”
+
+Esses cards devem gerar curiosidade, mas sem prometer lucro garantido.
+
+3. Botão de upgrade
+Adicionar um botão bem destacado:
+“Desbloquear ORAKULUS IA PREMIUM”
+
+Ao clicar, abrir uma área/modal explicando os benefícios:
+- sinais ilimitados
+- leitura completa do fluxo
+- sinais sem limitação diária
+- operações premium desbloqueadas
+- histórico completo
+- painel avançado de força do mercado
+
+4. Mensagens estratégicas na interface
+Adicionar frases curtas dentro do dashboard:
+
+“Você está vendo apenas uma parte da leitura completa.”
+“Fluxo forte identificado, mas restrito ao plano Premium.”
+“A ORAKULUS IA analisa cenário, força e intenção do preço em tempo real.”
+“Use a versão gratuita para testar a leitura e desbloqueie o Premium para acesso completo.”
+
+5. Painel Premium
+Melhorar a área Premium, sem apagar o que já existe.
+
+Adicionar:
+- badge: “PREMIUM ATIVO”
+- cards com:
+  - sinais ilimitados
+  - fluxo em tempo real
+  - leitura completa
+  - operações premium liberadas
+  - histórico avançado
+- visual mais forte, futurista e tecnológico
+
+6. Cadastro e validação
+Se já existir tela de cadastro, apenas melhorar.
+
+Adicionar campos ou reforçar:
+- Nome
+- E-mail
+- ID da corretora
+- Status do depósito
+- Botão: “Solicitar acesso gratuito”
+
+Após envio, mostrar:
+“Seu acesso está em análise. Assim que seu cadastro e depósito forem validados, a ORAKULUS IA FREE será liberada.”
+
+7. Design
+Manter o estilo atual, mas deixar mais profissional.
+
+Usar:
+- fundo escuro
+- verde neon
+- azul ciano
+- detalhes em amarelo
+- cards com bordas brilhantes
+- efeito glassmorphism
+- sombras suaves
+- layout responsivo
+- animações leves
+
+8. Importante sobre copy
+Não usar promessas de lucro garantido.
+Não usar frases como “ganhe dinheiro garantido”.
+Usar termos seguros:
+- probabilidade estimada
+- leitura de fluxo
+- cenário identificado
+- sinal operacional
+- análise em tempo real
+- possível oportunidade
+
+9. Dados simulados
+Manter dados simulados se já existirem.
+Se necessário, adicionar sinais simulados com:
+- Ativo
+- Direção
+- Horário
+- Probabilidade estimada
+- Força do fluxo
+- Pessoas acompanhando
+- Status da operação
+
+10. Não quebrar o projeto
+Antes de alterar, analise os arquivos atuais.
+Aplique as melhorias nos componentes existentes.
+Mantenha a organização do código.
+Corrija possíveis erros sem mudar a proposta visual principal.
+
+Resultado esperado:
+Quero que o sistema atual fique mais completo, mais premium, mais persuasivo e com uma jornada clara:
+
+Usuário gratuito → vê sinais limitados → percebe leituras bloqueadas → deseja desbloquear o Premium.

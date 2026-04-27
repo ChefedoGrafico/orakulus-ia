@@ -1,0 +1,131 @@
+Quero transformar o cadastro em um pop-up obrigatório após o usuário atingir o limite de 5 sinais gratuitos.
+
+IMPORTANTE:
+Não alterar a área Premium.
+Não alterar o admin.
+Não quebrar login.
+Não recriar o projeto.
+Apenas ajustar o fluxo FREE.
+
+OBJETIVO:
+O lead só verá o formulário de criação de acesso quando consumir os 5 sinais gratuitos.
+
+1. Remover o formulário fixo da landing page FREE.
+
+2. Usuário novo/free não cadastrado:
+- pode ver apenas 5 sinais gratuitos
+- mostrar contador:
+“Sinais gratuitos restantes: X/5”
+
+3. Quando chegar em 0 sinais:
+abrir automaticamente um modal/pop-up central com o mesmo visual da tela de cadastro atual.
+
+Título:
+“Crie seu acesso gratuito”
+
+Subtítulo:
+“Para liberar mais 10 sinais, crie sua conta na corretora oficial, realize o primeiro depósito e informe seus dados.”
+
+4. O pop-up deve ter 3 etapas:
+
+ETAPA 1 — ACESSO
+Campos:
+- nome completo
+- e-mail
+- senha
+- confirmar senha
+
+Botão:
+“PRÓXIMO”
+
+ETAPA 2 — CORRETORA
+Mostrar aviso:
+“Crie sua conta exclusivamente pelo link oficial abaixo.”
+
+Botão:
+“CRIAR CONTA OFICIAL”
+
+Esse botão deve abrir:
+https://trade.avalonbroker.com/register?aff=783535&aff_model=revenue&afftrack=
+
+Texto abaixo:
+“Após criar sua conta e realizar o primeiro depósito, volte aqui e informe seu ID.”
+
+Campos:
+- ID da conta na corretora
+- status do depósito
+
+Status do depósito deve ter opções:
+- Ainda não depositei
+- Depósito realizado
+
+Se selecionar “Ainda não depositei”, mostrar aviso:
+“Para liberar os sinais extras, é necessário realizar o primeiro depósito.”
+
+ETAPA 3 — CONFIRMAR
+Mostrar resumo:
+- nome
+- e-mail
+- ID da corretora
+- status do depósito
+
+Botão:
+“ENVIAR PARA VALIDAÇÃO”
+
+5. Ao enviar:
+- salvar usuário no banco
+- status_validacao = PENDENTE
+- plano = FREE
+- sinais_extras_liberados = 0
+- sinais_consumidos deve ser preservado
+
+6. Enquanto status_validacao = PENDENTE:
+mostrar tela/modal:
+“Seu acesso está sendo validado”
+“Estamos conferindo seu ID e primeiro depósito no painel da corretora.”
+“Assim que aprovado, 10 sinais extras serão liberados.”
+
+7. No admin:
+ao clicar em “Aprovar acesso”:
+- status_validacao = APROVADO
+- liberar +10 sinais extras para o usuário
+- total máximo FREE = 15 sinais
+
+8. Depois de aprovado:
+usuário volta para o FREE com contador:
+“Sinais extras restantes: X/10”
+
+9. Após consumir os 10 sinais extras:
+abrir modal final:
+
+Título:
+“Limite gratuito encerrado”
+
+Texto:
+“Você utilizou todos os sinais gratuitos disponíveis. Para continuar recebendo sinais ilimitados, ative o ORAKULUS IA PREMIUM.”
+
+Botão:
+“🚀 ATIVAR PREMIUM AGORA”
+
+Esse botão deve levar ao checkout da Cakto já configurado.
+
+10. Regras:
+- FREE sem cadastro: 5 sinais
+- FREE aprovado: +10 sinais extras
+- total FREE máximo: 15 sinais
+- PREMIUM: sinais ilimitados
+
+11. Salvar a contagem no backend, não apenas no localStorage.
+Refresh da página não pode resetar sinais.
+Trocar de dispositivo não pode resetar se o usuário estiver logado.
+
+12. Não pedir URL de comprovante.
+Não pedir link de comprovante.
+A validação será feita pela equipe no admin usando o ID da corretora.
+
+Depois me diga:
+- quais arquivos foram alterados
+- quais campos foram adicionados no banco
+- como testar o limite dos 5 sinais
+- como aprovar no admin
+- como testar os 10 sinais extras

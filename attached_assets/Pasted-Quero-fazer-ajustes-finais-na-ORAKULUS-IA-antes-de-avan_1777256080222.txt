@@ -1,0 +1,88 @@
+Quero fazer ajustes finais na ORAKULUS IA antes de avançar para a página de login.
+
+IMPORTANTE:
+Não alterar backend sem necessidade.
+Não quebrar o sistema Premium.
+Não mexer no checkout.
+Focar apenas nos ajustes abaixo.
+
+1. Voltar mensagem de G1
+
+Na área do sinal, adicionar novamente a mensagem:
+
+“CASO NECESSÁRIO, USAR G1”
+
+Essa mensagem deve aparecer de forma discreta, abaixo das informações da entrada, sem parecer promessa.
+
+2. Corrigir limite da página FREE
+
+Na versão FREE:
+- o usuário NÃO pode receber sinais ilimitados
+- antes do cadastro: mostrar no máximo 5 sinais gratuitos
+- depois que preencher cadastro e validar conta: liberar somente mais sinais gratuitos limitados
+- nunca liberar sinais ilimitados no plano FREE
+
+Sinais ilimitados devem existir apenas no PREMIUM.
+
+3. Melhorar mensagem verde
+
+Remover a mensagem verde atual que está visualmente fraca.
+
+Substituir por algo mais profissional, como:
+
+“LEITURA EM PROCESSAMENTO”
+ou
+“SINAL EM ANÁLISE PELO SISTEMA”
+ou
+“FLUXO SENDO VALIDADO EM TEMPO REAL”
+
+Escolha a opção que encaixar melhor no layout.
+
+4. Números com movimento no card do sinal
+
+Onde aparece:
+“23 pessoas estão acompanhando essa leitura agora”
+
+Esse número não deve ficar fixo.
+
+Criar variação automática entre 18 e 37 pessoas, mudando suavemente a cada alguns segundos.
+
+Exemplo:
+“26 pessoas estão acompanhando essa leitura agora”
+“31 pessoas estão acompanhando essa leitura agora”
+
+5. Números com movimento na headline
+
+Onde aparece:
+“+47 pessoas acompanhando o mercado agora”
+
+Esse número também deve variar automaticamente entre 41 e 68 pessoas, mudando suavemente a cada alguns segundos.
+
+Manter o texto:
+“Novas leituras sendo analisadas em tempo real”
+mas deixar os números com sensação dinâmica.
+
+6. Remover cliques indevidos no Premium
+
+Na área PREMIUM:
+- o gráfico não pode ser clicável
+- nenhum card analítico deve redirecionar para WhatsApp
+- remover qualquer onClick, link ou redirecionamento do gráfico, cards, candles ou áreas internas
+- deixar clicável apenas botões realmente necessários, como pagamento/renovação quando existir
+
+7. Garantir coerência
+
+FREE:
+- limitado
+- com CTA para Premium
+
+PREMIUM:
+- interface de sistema
+- sem links indevidos
+- sem WhatsApp no gráfico
+- sinais completos apenas para premium
+
+Depois me diga:
+- quais arquivos foram alterados
+- onde o limite de sinais FREE foi corrigido
+- quais elementos deixaram de ser clicáveis
